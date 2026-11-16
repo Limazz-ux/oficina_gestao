@@ -1,0 +1,262 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f3f6fb;
+    color: #18263b;
+    font: 15px system-ui, Arial, sans-serif;
+    line-height: 1.5;
+}
+
+header {
+    background: #122846;
+    color: white;
+    padding: 18px max(20px, calc((100vw - 1150px) / 2));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 25px;
+}
+
+header small {
+    display: block;
+}
+
+header a {
+    color: white;
+}
+
+main {
+    max-width: 1150px;
+    margin: 30px auto;
+    padding: 0 18px;
+}
+
+.hero {
+    background: linear-gradient(110deg, #163e70, #2378bd);
+    color: white;
+    border-radius: 15px;
+    padding: 26px;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    margin: 0;
+}
+
+.metrics {
+    display: flex;
+    gap: 22px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.metrics span {
+    padding: 12px;
+    background: #ffffff20;
+    border-radius: 8px;
+}
+
+.metrics b {
+    display: block;
+    font-size: 25px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 18px;
+    margin-bottom: 20px;
+}
+
+.card,
+.login {
+    background: white;
+    padding: 23px;
+    border-radius: 13px;
+    box-shadow: 0 5px 22px #18365c12;
+    margin-bottom: 20px;
+}
+
+.login {
+    max-width: 430px;
+    margin: 9vh auto;
+}
+
+.login h1,
+.card h2,
+.card h3 {
+    color: #165a98;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #d0d8e2;
+    border-radius: 7px;
+    font: inherit;
+}
+
+textarea {
+    min-height: 65px;
+    resize: vertical;
+}
+
+button {
+    background: #1766ad;
+    color: white;
+    border: 0;
+    padding: 11px 14px;
+    border-radius: 7px;
+    cursor: pointer;
+    font: inherit;
+}
+
+button:hover {
+    background: #0e4d85;
+}
+
+.danger {
+    background: #a52b37;
+}
+
+.danger:hover {
+    background: #81202a;
+}
+
+.filters,
+.inline {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.filters {
+    margin-bottom: 18px;
+}
+
+.filters input {
+    max-width: 230px;
+}
+
+.inline select {
+    width: auto;
+}
+
+.tablewrap {
+    overflow-x: auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 850px;
+}
+
+td,
+th {
+    padding: 12px;
+    border-bottom: 1px solid #e5eaf1;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background: #eff4fa;
+}
+
+.alerta {
+    background: #e3eefc;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 18px;
+}
+
+.erro {
+    color: #b22;
+}
+
+.pages {
+    display: flex;
+    gap: 9px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.pages a {
+    padding: 7px 11px;
+    background: #e8f0fa;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.pages .current {
+    background: #1766ad;
+    color: white;
+}
+
+details {
+    margin: 10px 0;
+}
+
+details summary {
+    cursor: pointer;
+    color: #1766ad;
+}
+
+details form {
+    padding: 12px;
+    background: #f6f8fb;
+}
+
+.criarConta {
+    display: flex;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #1766ad;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 18px;
+    }
+
+    main {
+        margin: 18px auto;
+        padding: 0 12px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .filters {
+        align-items: stretch;
+    }
+
+    .filters input {
+        max-width: 100%;
+    }
+
+    .inline select {
+        width: 100%;
+    }
+}
